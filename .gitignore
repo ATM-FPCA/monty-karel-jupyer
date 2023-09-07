@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+migrated
+.DS_Store
+__pycache__
+*.pyc
+*$py.class
