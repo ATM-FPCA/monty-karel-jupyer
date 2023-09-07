@@ -1,14 +1,15 @@
-run = "ihaskell install --stack && jupyter notebook"
+run = "jupyter notebook --config jupyter_notebook_config.py"
 
 hidden = [
   ".gitignore", 
   "migrated",
   "notebooks/.ipynb_checkpoints",
-  "jupyter_notebook_config.py"
+  "jupyter_notebook_config.py",
+  ".pythonlibs"
 ]
 
 [nix]
-channel = "stable-22_11"
+channel = "stable-23_05"
 
 entrypoint = "README.md"
 
