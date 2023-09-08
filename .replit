@@ -1,5 +1,6 @@
+language = "blank"
 run = "jupyter notebook --config jupyter_notebook_config.py"
-
+entrypoint = "MK624.ipynb"
 hidden = [
   ".gitignore", 
   "migrated",
@@ -11,9 +12,6 @@ hidden = [
 [nix]
 channel = "stable-23_05"
 
-entrypoint = "README.md"
-
 [env]
 JUPYTER_CONFIG_DIR = "$REPL_HOME"
 
-language = ""
