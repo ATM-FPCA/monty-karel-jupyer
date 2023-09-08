@@ -1,4 +1,4 @@
-language = "bash"
+language = "html"
 run = "jupyter notebook --config jupyter_notebook_config.py"
 entrypoint = "MK624.ipynb"
 hidden = [
