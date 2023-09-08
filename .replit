@@ -1,4 +1,4 @@
-language = "blank"
+language = "python"
 run = "jupyter notebook --config jupyter_notebook_config.py"
 entrypoint = "MK624.ipynb"
 hidden = [
@@ -8,6 +8,7 @@ hidden = [
   "jupyter_notebook_config.py",
   ".pythonlibs"
 ]
+modules = ["python-3.10:v18-20230807-322e88b"]
 
 [nix]
 channel = "stable-23_05"
@@ -15,3 +16,12 @@ channel = "stable-23_05"
 [env]
 JUPYTER_CONFIG_DIR = "$REPL_HOME"
 
+[packager]
+language = "python"
+ignoredPackages = ["karel"]
+
+[packager.features]
+packageSearch = false
+guessImports = false
+
+[deployment]
