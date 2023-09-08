@@ -16,4 +16,4 @@ entrypoint = "README.md"
 [env]
 JUPYTER_CONFIG_DIR = "$REPL_HOME"
 
-language = "Jupyter Notebook"
+language = ""
